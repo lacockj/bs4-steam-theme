@@ -454,6 +454,40 @@ button.large {
   box-shadow: 0 6px 12px #321;
 }
 
+/* Custom Input Elements */
+.c-select {
+  color: #644;
+  background-color: #f7f7e7;
+  border: 4px ridge #db0;
+  border-radius: 1.25em;
+}
+.c-select:focus {
+  border-color: #ddd;
+}
+.c-input {
+  color: inherit;
+}
+.c-indicator {
+  width: 1.2rem; height: 1.2rem;
+  border: 4px ridge #db0;
+  background-color: #333;
+  background: -webkit-linear-gradient(#555, black);
+  background: -o-linear-gradient(#555, black);
+  background: -moz-linear-gradient(#555, black);
+  background: linear-gradient(#555, black);
+}
+.c-input>input:focus~.c-indicator {
+  border-color: #ddd;
+}
+.c-input>input:checked~.c-indicator {
+  background-image: none;
+  background-color: #0f0;
+  background: -webkit-linear-gradient(#0c0, #0f0, #0c0);
+  background: -o-linear-gradient(#0c0, #0f0, #0c0);
+  background: -moz-linear-gradient(#0c0, #0f0, #0c0);
+  background: linear-gradient(#0c0, #0f0, #0c0);
+}
+
 /* Other 
 .spyglass {
   position: absolute;
