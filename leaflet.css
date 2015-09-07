@@ -1,0 +1,42 @@
+.leaflet-control-zoom {
+  background: black;
+  background: -webkit-linear-gradient(black, #777);
+  background: -o-linear-gradient(black, #777);
+  background: -moz-linear-gradient(black, #777);
+  background: linear-gradient(black, #777);
+  border: 2px ridge #777;
+  border-radius: 15px;
+  outline: 0;
+}
+.leaflet-container.dark .leaflet-bar {
+  background: black;
+  background: -webkit-linear-gradient(black, #777);
+  background: -o-linear-gradient(black, #777);
+  background: -moz-linear-gradient(black, #777);
+  background: linear-gradient(black, #777);
+  border: 2px ridge #777;
+  border-radius: 15px;
+}
+.leaflet-control-zoom.leaflet-bar a {
+  border: none;
+}
+.leaflet-container.dark .leaflet-bar a:active,
+.leaflet-container.dark .leaflet-bar a:hover {
+  background-color: transparent;
+}
+.leaflet-control-attribution {
+  opacity: 0.5;
+}
+.mapbox-logo {
+  opacity: 0.5;
+}
+
+.leaflet-container .leaflet-bar .leaflet-control-fullscreen-button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+.leaflet-control-fullscreen a {
+  background-image: url("/themes/steam/images/leaflet-fullscreen-dark.png");
+}

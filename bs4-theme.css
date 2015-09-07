@@ -1,0 +1,495 @@
+@font-face {
+  font-family: gothic-light;
+  src: url("fonts/apple-sd-gothic-neo-light.otf");
+}
+@font-face {
+  font-family: gothic-thin;
+  src: url("fonts/apple-sd-gothic-neo-thin.otf");
+}
+@font-face {
+  font-family: handwriting;
+  src: url("fonts/jellyka-bees-antique-handwriting.ttf");
+}
+@font-face {
+  font-family: prida65;
+  src: url("fonts/prida65.otf");
+}
+@font-face {
+  font-family: typewriter;
+  src: url("fonts/ttwpgott.ttf");
+}
+@font-face {
+  font-family: windsong;
+  src: url("fonts/windsong.ttf");
+}
+@font-face {
+  font-family: cornpopthree;
+  src: url("fonts/cornpopthree.otf");
+}
+@font-face {
+  font-family: vintage-decorative-signs-2;
+  src: url("fonts/vintage-decorative-signs-2.ttf");
+}
+@font-face {
+  font-family: vintage-decorative-signs-3;
+  src: url("fonts/vintage-decorative-signs-3.woff");
+}
+/* Theme Colors and Fonts */
+html, body {
+  color: #644;
+  font-family: Forum, serif;
+  background-color: #f7e7d0;
+  background-image: url("images/almond-papyrus-2.jpg");
+  background-repeat: repeat;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+  font-family: Lancelot;
+  font-weight: normal;
+}
+/*a {
+  color: #007;
+  text-decoration: inherit;
+  outline: 0;
+  transition: color 0.5s;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #ace;
+}
+
+/* Decorative Horizontal Rules */
+hr {
+  margin: 20px;
+  border: none;
+  border-bottom: 1px solid #644;
+}
+hr.space, hr.space-1 {
+  border: none;
+  height: 1px;
+  margin: 0.5rem 0;
+  clear: both;
+}
+hr.double-space, hr.space-2 {
+  border: none;
+  height: 1px;
+  margin: 1rem 0;
+  clear: both;
+}
+hr.tripple-space, hr.space-3 {
+  border: none;
+  height: 1px;
+  margin: 1.5rem 0;
+  clear: both;
+}
+hr.clear {
+  border: none;
+  height: 1px;
+  margin: 0;
+  clear: both;
+}
+hr.black {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+hr.emboss {
+  border: 1px outset #fff;
+  padding-top: 1px;
+  opacity: 0.3;
+}
+hr.deboss {
+  border: 1px inset #ddd;
+  opacity: 0.25;
+}
+hr.bronze {
+  border: 1px outset #ba0;
+  background-color: #ba0;
+  padding-top: 1px;
+}
+hr.steam {
+  border: none;
+  font-family: vintage-decorative-signs-3;
+  font-size: 300px;
+  line-height: 75px;
+  margin: -75px 0 75px 0;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(200,150,0,0.5);
+  text-shadow: 0px -1px 0px rgba(200,150,50,0.25), 0px 1px 0px rgba(0,0,0,0.5);
+}
+hr.steam::before {
+  content: "z";
+}
+img {
+  max-width: 100%;
+}
+
+/* Text Styles 
+.emboss {
+  text-shadow: 0px -1px 1px rgba(255,255,255,0.25), 0px 1px 1px rgba(0,0,0,0.5);
+}
+.deboss {
+  text-shadow:  0px -1px 1px rgba(0,0,0,0.5), 0px 1px 1px rgba(255,255,255,0.25);
+}
+
+/* List Items 
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+ul.no-bullets li {
+  margin-left: -1em;
+}
+
+/* Layering */
+.z1 {
+  z-index: 1;
+  box-shadow: 0 1px 3px #321;
+  box-shadow: 0 1px 3px rgba(15,10,5,0.4);
+}
+.z2 {
+  z-index: 2;
+  box-shadow: 0 2px 6px #321;
+  box-shadow: 0 2px 6px rgba(15,10,5,0.4);
+}
+.z3 {
+  z-index: 3;
+  box-shadow: 0 5px 15px #321;
+  box-shadow: 0 5px 15px rgba(15,10,5,0.4);
+}
+.z4 {
+  z-index: 4;
+  box-shadow: 0 10px 30px #321;
+  box-shadow: 0 10px 30px rgba(15,10,5,0.4);
+}
+.z5 {
+  z-index: 5;
+  box-shadow: 0 10px 30px #321;
+  box-shadow: 0 10px 30px rgba(15,10,5,0.4);
+}
+
+/* Card */
+.card {
+  background: #f7f7f7 url("images/paper.jpg") repeat;
+  border-radius: 0;
+}
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  text-align: center;
+}
+
+/* Card Matte */
+.card-matte {
+  background: #622 center top url("images/leather.jpg") no-repeat;
+  border: 3px ridge #ba0;
+  padding: 20px;
+  color: #ba0;
+  text-shadow:  0px -1px 1px rgba(0,0,0,0.5), 0px 1px 1px rgba(255,255,255,0.25);
+}
+
+/* Corners */
+.corners, .corner-stamps {
+  position: relative;
+}
+.corner {
+  position: absolute;
+  font-family: cornpopthree;
+  font-size: 50px;
+  font-size: 4rem;
+  line-height: 3rem;
+  width: auto; height: auto;
+  text-align: center;
+  overflow: visible;
+  pointer-events: none;
+}
+.corners.embossed .corner {
+  color: #fcfafa;
+  color: rgba(255,255,255,0);
+  text-shadow: 0 -1px 0 rgba(255,255,255,0.75), 0 0 1px rgba(0,0,0,0.25);
+}
+.corners.bracket .corner {
+  color: #ba0;
+  color: rgba(220,200,0,0.75);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.75);
+}
+.bracket.corners.black .corner {
+  color: #000;
+}
+
+.corners .corner.tr { top: 0; right: 0; }
+.corners .corner.tl { top: 0; left: 0; }
+.corners .corner.br { bottom: -0.1em; right: 0; }
+.corners .corner.bl { bottom: -0.1em; left: 0; }
+
+.corners.embossed .corner.tl, .corners.embossed .corner.bl { left: 2px; }
+.corners.embossed .corner.tr, .corners.embossed .corner.br { right: 2px; }
+
+/*.corners.set1 .corner.tl, .corners.set1 .corner.tr { top: -5px; }
+.corners.set1 .corner.bl, .corners.set1 .corner.br { bottom: -11px; }*/
+.corners.set1 .corner.tl:before { content: "0"; }
+.corners.set1 .corner.tr:before { content: "3"; }
+.corners.set1 .corner.bl:before { content: "1"; }
+.corners.set1 .corner.br:before { content: "2"; }
+
+/*.corners.set2 .corner.tl, .corners.set2 .corner.tr { top: -5px; }
+.corners.set2 .corner.bl, .corners.set2 .corner.br { bottom: -11px; }*/
+.corners.set2 .corner.tl:before { content: "5"; }
+.corners.set2 .corner.tr:before { content: "7"; }
+.corners.set2 .corner.bl:before { content: "6"; }
+.corners.set2 .corner.br:before { content: "4"; }
+
+/*.corners.set3 .corner.tl, .corners.set3 .corner.tr { top: -8px; }
+.corners.set3 .corner.bl, .corners.set3 .corner.br { bottom: -13px; }*/
+.corners.set3 .corner.tl:before { content: "r"; }
+.corners.set3 .corner.tr:before { content: "a"; }
+.corners.set3 .corner.bl:before { content: "s"; }
+.corners.set3 .corner.br:before { content: "q"; }
+
+.corners.set4 .corner.tl, .corners.set4 .corner.tr { top: 0.1em; }
+.corners.set4 .corner.tl:before { content: "c"; }
+.corners.set4 .corner.tr:before { content: "b"; }
+.corners.set4 .corner.bl:before { content: "e"; }
+.corners.set4 .corner.br:before { content: "d"; }
+
+.corners.set5 .corner.tr { font-size: 3.7rem; }
+.corners.set5 .corner.tl:before { content: "g"; }
+.corners.set5 .corner.tr:before { content: "A"; }
+.corners.set5 .corner.bl:before { content: "h"; }
+.corners.set5 .corner.br:before { content: "f"; }
+
+/*.corners.set6 .corner.tl, .corners.set6 .corner.tr { top: -5px; }
+.corners.set6 .corner.bl, .corners.set6 .corner.br { bottom: -11px; }*/
+.corners.set6 .corner.tl:before { content: "i"; }
+.corners.set6 .corner.tr:before { content: "j"; }
+.corners.set6 .corner.bl:before { content: "l"; }
+.corners.set6 .corner.br:before { content: "k"; }
+
+/*.corners.set7 .corner.tl, .corners.set7 .corner.tr { top: -5px; }
+.corners.set7 .corner.bl, .corners.set7 .corner.br { bottom: -11px; }*/
+.corners.set7 .corner.tl:before { content: "w"; }
+.corners.set7 .corner.tr:before { content: "m"; }
+.corners.set7 .corner.bl:before { content: "v"; }
+.corners.set7 .corner.br:before { content: "z"; }
+
+/*.corners.set8 .corner.tl, .corners.set8 .corner.tr { top: -6px; }
+.corners.set8 .corner.bl, .corners.set8 .corner.br { bottom: -11px; }*/
+.corners.set8 .corner.tl:before { content: "o"; }
+.corners.set8 .corner.tr:before { content: "n"; }
+.corners.set8 .corner.bl:before { content: "p"; }
+.corners.set8 .corner.br:before { content: "Z"; }
+
+.corners.set9 .corner.tl, .corners.set9 .corner.tr { top: 0.1em; }
+.corners.set9 .corner.tl:before { content: "C"; }
+.corners.set9 .corner.tr:before { content: "B"; }
+.corners.set9 .corner.bl:before { content: "D"; }
+.corners.set9 .corner.br:before { content: "E"; }
+
+.corners.set10 .corner.tl, .corners.set10 .corner.tr { top: 0.05em; }
+.corners.set10 .corner.tl:before { content: "G"; }
+.corners.set10 .corner.tr:before { content: "I"; }
+.corners.set10 .corner.bl:before { content: "H"; }
+.corners.set10 .corner.br:before { content: "F"; }
+
+.corners.set11 .corner.tl, .corners.set11 .corner.tr { top: 0.15em; }
+.corners.set11 .corner.tl:before { content: "K"; }
+.corners.set11 .corner.tr:before { content: "J"; }
+.corners.set11 .corner.bl:before { content: "L"; }
+.corners.set11 .corner.br:before { content: "M"; }
+
+.corners.set12 .corner.tl, .corners.set12 .corner.tr { top: 0.1em; }
+.corners.set12 .corner.tl:before { content: "Q"; }
+.corners.set12 .corner.tr:before { content: "N"; }
+.corners.set12 .corner.bl:before { content: "P"; }
+.corners.set12 .corner.br:before { content: "O"; }
+
+.corners.set13 .corner.tl, .corners.set13 .corner.tr { top: -0.1em; }
+.corners.set13 .corner.tl:before { content: "S"; }
+.corners.set13 .corner.tr:before { content: "T"; }
+.corners.set13 .corner.bl:before { content: "U"; }
+.corners.set13 .corner.br:before { content: "R"; }
+
+.corners.set14 .corner.tl, .corners.set14 .corner.tr { top: 0.1em; }
+.corners.set14 .corner.tl:before { content: "Y"; }
+.corners.set14 .corner.tr:before { content: "V"; }
+.corners.set14 .corner.bl:before { content: "X"; }
+.corners.set14 .corner.br:before { content: "W"; }
+
+.bracket.corners .corner.tr { top: -0.08em; right: -0.08em; }
+.bracket.corners .corner.tl { top: -0.11em; left: -0.08em; }
+.bracket.corners .corner.br { bottom: -0.16em; right: -0.08em; }
+.bracket.corners .corner.bl { bottom: -0.16em; left: -0.08em; }
+
+/* Etched Brass Plate */
+.bg-brass {
+  background: #db0 url("images/brass-plate.jpg") repeat;
+  color: #db0;
+  color: rgba(150,100,0,0.4);
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.25), 0px -1px 0px rgba(0,0,0,0.5);
+}
+
+.brass-plate {
+  padding: 0.5rem;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #db0 url("images/brass-plate.jpg") repeat;
+  font-family: gothic-light, arial, sans-serif;
+  color: #db0;
+  color: rgba(150,100,0,0.4);
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.25), 0px -1px 0px rgba(0,0,0,0.5);
+}
+.brass-plate .corner.tr,
+.brass-plate .corner.tl,
+.brass-plate .corner.br,
+.brass-plate .corner.bl {
+  width: 20px; height: 20px;
+  background: url('images/screw-20.png') no-repeat;
+  position: absolute;
+}
+.brass-plate .corner.tr { top: 4px; right: 4px; }
+.brass-plate .corner.tl { top: 4px; left: 4px; }
+.brass-plate .corner.br { bottom: 4px; right: 4px; }
+.brass-plate .corner.bl { bottom: 4px; left: 4px; }
+
+.brass-plate-header, .brass-plate-footer { min-height: 1rem }
+.brass-plate-header::before,
+.brass-plate-header::after,
+.brass-plate-footer::before,
+.brass-plate-footer::after {
+  width: 20px; height: 20px;
+  background: url('images/screw-20.png') no-repeat;
+  position: absolute;
+}
+.brass-plate-header::before {
+  left: 2px;
+  top: 2px;
+  content: " ";
+}
+.brass-plate-header::after {
+  right: 2px;
+  top: 2px;
+  content: " ";
+}
+.brass-plate-footer::before {
+  left: 2px;
+  bottom: 2px;
+  content: " ";
+}
+.brass-plate-footer::after {
+  right: 2px;
+  bottom: 2px;
+  content: " ";
+}
+
+/* Input Elements */
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+textarea.form-control
+{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 4px ridge #db0;
+  border-radius: 1.25em;
+  outline: 0;
+  resize: none;
+  padding: 0.25em 0.5em;
+  font-family: typewriter, "Times New Roman", times, serif;
+  font-size: 1rem;
+  color: #644;
+  background-color: #f7f7e7;
+  /*background: rgba(255,255,255,0.9) url("images/worn-graphpaper.jpg") repeat; */
+  box-shadow: 0 3px 8px #321 inset;
+  -webkit-transition: background 0.5s;
+          transition: background 0.5s;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus,
+textarea.form-control:focus
+{
+  background: white;
+  box-shadow: 0 3px 4px #321 inset;
+  border: 4px ridge #db0;
+}
+input[type="button"],
+button {
+  margin: 1px;
+  padding: 4px 8px 3px 8px;
+  background: black;
+  background: -webkit-linear-gradient(black, #777);
+  background: -o-linear-gradient(black, #777);
+  background: -moz-linear-gradient(black, #777);
+  background: linear-gradient(black, #777);
+  border: 2px ridge #777;
+  border-radius: 1rem;
+  outline: 0;
+  box-shadow: 0 3px 8px #321;
+  -webkit-transition: color 0.5s, text-shadow 0.5s;
+          transition: color 0.5s, text-shadow 0.5s;
+  font-family: serif;
+  font-size: 0.7rem;
+  color: #ddd;
+  text-shadow: 0px -1px 1px rgba(255,255,255,0.25), 0px 1px 1px rgba(0,0,0,0.5);
+}
+input[type="button"]:hover,
+input[type="button"]:focus,
+button:hover,
+button:focus {
+  color: white;
+  text-shadow: 0 0 8px white;
+}
+input[type="button"].large,
+button.large {
+  margin: 0.25rem;
+  min-width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 12px #321;
+}
+
+/* Other 
+.spyglass {
+  position: absolute;
+  top: 5px;
+  left: 5px; right: 5px;
+  height: 2em;
+  border: 4px ridge #db0;
+  border-radius: 1.25em;
+}
+
+.pos-ref {
+  position: relative;
+}
+.vignette {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: -webkit-radial-gradient(50% 50%, farthest-corner, rgba(80,30,30,0) 0%, rgba(80,30,30,0.125) 66%, rgba(80,30,30,0.5));
+  background: -o-radial-gradient(50% 50%, farthest-corner, rgba(80,30,30,0) 0%, rgba(80,30,30,0.125) 66%, rgba(80,30,30,0.5));
+  background: -moz-radial-gradient(50% 50%, farthest-corner, rgba(80,30,30,0) 0%, rgba(80,30,30,0.125) 66%, rgba(80,30,30,0.5));
+  background: radial-gradient(farthest-corner at 50% 50%, rgba(80,30,30,0) 0%, rgba(80,30,30,0.125) 66%, rgba(80,30,30,0.5));
+  pointer-events: none;
+}
+
+/* Nymphette Glyphs */
+@font-face {
+  font-family: nymphette;
+  src: url("fonts/nymphette.ttf");
+}
+.nymph {
+  font-family: nymphette;
+  font-style: normal;
+  font-variant: normal;
+}
+.nymph.glyph-4:before { content: "\f030" }
+.nymph.glyph-49:before { content: "\f06a" }
+.nymph.glyph-50:before { content: "\f06b" }
+
+
+
