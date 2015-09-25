@@ -34,7 +34,26 @@
   font-family: vintage-decorative-signs-3;
   src: url("fonts/vintage-decorative-signs-3.woff");
 }
+
+
+/* Nymphette Glyphs */
+
+@font-face {
+  font-family: nymphette;
+  src: url("fonts/nymphette.ttf");
+}
+.nymph {
+  font-family: nymphette;
+  font-style: normal;
+  font-variant: normal;
+}
+.nymph.glyph-4:before { content: "\f030" }
+.nymph.glyph-49:before { content: "\f06a" }
+.nymph.glyph-50:before { content: "\f06b" }
+
+
 /* Theme Colors and Fonts */
+
 html, body {
   color: #644;
   font-family: Forum, serif;
@@ -43,11 +62,33 @@ html, body {
   background-repeat: repeat;
 }
 
+
 /* Typography */
+
 h1,h2,h3,h4,h5,h6 {
   font-family: Lancelot;
   font-weight: normal;
 }
+h1.flourish:before,
+h2.flourish:before,
+h3.flourish:before,
+h4.flourish:before,
+h5.flourish:before,
+h6.flourish:before {
+  font-family: nymphette; content: "\f06b\00a0";
+}
+h1.flourish:after,
+h2.flourish:after,
+h3.flourish:after,
+h4.flourish:after,
+h5.flourish:after,
+h6.flourish:after {
+  font-family: nymphette; content: "\00a0\f06a";
+}
+.handwritten, .handwriting {
+  font-family: windsong, cursive;
+}
+
 /*a {
   color: #007;
   text-decoration: inherit;
@@ -75,13 +116,13 @@ hr.space, hr.space-1 {
 hr.double-space, hr.space-2 {
   border: none;
   height: 1px;
-  margin: 1rem 0;
+  margin: 2rem 0;
   clear: both;
 }
 hr.tripple-space, hr.space-3 {
   border: none;
   height: 1px;
-  margin: 1.5rem 0;
+  margin: 4.5rem 0;
   clear: both;
 }
 hr.clear {
@@ -94,16 +135,16 @@ hr.black {
   border: none;
   border-bottom: 1px solid #000;
 }
-hr.emboss {
+hr.embossed, hr.emboss {
   border: 1px outset #fff;
   padding-top: 1px;
   opacity: 0.3;
 }
-hr.deboss {
+hr.debossed, hr.deboss {
   border: 1px inset #ddd;
   opacity: 0.25;
 }
-hr.bronze {
+hr.brass {
   border: 1px outset #ba0;
   background-color: #ba0;
   padding-top: 1px;
@@ -121,6 +162,17 @@ hr.steam {
 }
 hr.steam::before {
   content: "z";
+}
+div.hr.flourish {
+  border: none;
+  font-family: vintage-decorative-signs-2;
+  font-size: 12rem;
+  line-height: 12rem;
+  font-weight: normal;
+  text-align: center;
+}
+div.hr.flourish::before {
+  content: "e";
 }
 img {
   max-width: 100%;
@@ -175,15 +227,23 @@ ul.no-bullets li {
   background: #f7f7f7 url("images/paper.jpg") repeat;
   border-radius: 0;
 }
-.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+.card .card-title {
   text-align: center;
+}
+/*.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  text-align: center;
+}*/
+.card > *:last-child:not(hr) {
+  margin-bottom: 0;
 }
 
 /* Card Matte */
 .card-matte {
-  background: #622 center top url("images/leather.jpg") no-repeat;
+  background: #622 center top url("images/leather-tile.jpg") repeat;
   border: 3px ridge #ba0;
   padding: 20px;
+}
+.letterpress-gold {
   color: #ba0;
   text-shadow:  0px -1px 1px rgba(0,0,0,0.5), 0px 1px 1px rgba(255,255,255,0.25);
 }
@@ -203,17 +263,17 @@ ul.no-bullets li {
   overflow: visible;
   pointer-events: none;
 }
-.corners.embossed .corner {
+.corners.embossed > .corner {
   color: #fcfafa;
   color: rgba(255,255,255,0);
   text-shadow: 0 -1px 0 rgba(255,255,255,0.75), 0 0 1px rgba(0,0,0,0.25);
 }
-.corners.bracket .corner {
+.corners.bracket > .corner {
   color: #ba0;
   color: rgba(220,200,0,0.75);
   text-shadow: 0px 1px 1px rgba(0,0,0,0.75);
 }
-.bracket.corners.black .corner {
+.bracket.corners.black > .corner {
   color: #000;
 }
 
@@ -222,8 +282,8 @@ ul.no-bullets li {
 .corners .corner.br { bottom: -0.1em; right: 0; }
 .corners .corner.bl { bottom: -0.1em; left: 0; }
 
-.corners.embossed .corner.tl, .corners.embossed .corner.bl { left: 2px; }
-.corners.embossed .corner.tr, .corners.embossed .corner.br { right: 2px; }
+.corners.embossed > .corner.tl, .corners.embossed > .corner.bl { left: 2px; }
+.corners.embossed > .corner.tr, .corners.embossed > .corner.br { right: 2px; }
 
 /*.corners.set1 .corner.tl, .corners.set1 .corner.tr { top: -5px; }
 .corners.set1 .corner.bl, .corners.set1 .corner.br { bottom: -11px; }*/
@@ -315,10 +375,10 @@ ul.no-bullets li {
 .corners.set14 .corner.bl:before { content: "X"; }
 .corners.set14 .corner.br:before { content: "W"; }
 
-.bracket.corners .corner.tr { top: -0.08em; right: -0.08em; }
-.bracket.corners .corner.tl { top: -0.11em; left: -0.08em; }
-.bracket.corners .corner.br { bottom: -0.16em; right: -0.08em; }
-.bracket.corners .corner.bl { bottom: -0.16em; left: -0.08em; }
+.bracket.corners > .corner.tr { top: -0.08em; right: -0.08em; }
+.bracket.corners > .corner.tl { top: -0.11em; left: -0.08em; }
+.bracket.corners > .corner.br { bottom: -0.16em; right: -0.08em; }
+.bracket.corners > .corner.bl { bottom: -0.16em; left: -0.08em; }
 
 /* Etched Brass Plate */
 .bg-brass {
@@ -488,7 +548,7 @@ button.large {
   background: linear-gradient(#0c0, #0f0, #0c0);
 }
 
-/* Other 
+/* Other */
 .spyglass {
   position: absolute;
   top: 5px;
@@ -510,20 +570,5 @@ button.large {
   background: radial-gradient(farthest-corner at 50% 50%, rgba(80,30,30,0) 0%, rgba(80,30,30,0.125) 66%, rgba(80,30,30,0.5));
   pointer-events: none;
 }
-
-/* Nymphette Glyphs */
-@font-face {
-  font-family: nymphette;
-  src: url("fonts/nymphette.ttf");
-}
-.nymph {
-  font-family: nymphette;
-  font-style: normal;
-  font-variant: normal;
-}
-.nymph.glyph-4:before { content: "\f030" }
-.nymph.glyph-49:before { content: "\f06a" }
-.nymph.glyph-50:before { content: "\f06b" }
-
 
 
