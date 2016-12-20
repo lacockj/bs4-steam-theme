@@ -1,0 +1,33 @@
+/* Fippable, Two-Sided Cards */
+.perspective {
+  -webkit-perspective: 150px;
+  perspective: 750px;
+}
+.card-flipper {
+  position: relative;
+}
+.card-flipper .card-front,
+.card-flipper .card-back {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.card-flipper .card-back {
+      -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.card-flipper.flipped .card-front {
+      -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.card-flipper.flipped .card-back {
+      -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}

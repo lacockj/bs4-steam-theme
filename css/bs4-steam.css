@@ -1,38 +1,38 @@
 @font-face {
   font-family: gothic-light;
-  src: url("fonts/apple-sd-gothic-neo-light.otf");
+  src: url("../fonts/apple-sd-gothic-neo-light.otf");
 }
 @font-face {
   font-family: gothic-thin;
-  src: url("fonts/apple-sd-gothic-neo-thin.otf");
+  src: url("../fonts/apple-sd-gothic-neo-thin.otf");
 }
 @font-face {
   font-family: handwriting;
-  src: url("fonts/jellyka-bees-antique-handwriting.ttf");
+  src: url("../fonts/jellyka-bees-antique-handwriting.ttf");
 }
 @font-face {
   font-family: prida65;
-  src: url("fonts/prida65.otf");
+  src: url("../fonts/prida65.otf");
 }
 @font-face {
   font-family: typewriter;
-  src: url("fonts/ttwpgott.ttf");
+  src: url("../fonts/ttwpgott.ttf");
 }
 @font-face {
   font-family: windsong;
-  src: url("fonts/windsong.ttf");
+  src: url("../fonts/windsong.ttf");
 }
 @font-face {
   font-family: cornpopthree;
-  src: url("fonts/cornpopthree.otf");
+  src: url("../fonts/cornpopthree.otf");
 }
 @font-face {
   font-family: vintage-decorative-signs-2;
-  src: url("fonts/vintage-decorative-signs-2.ttf");
+  src: url("../fonts/vintage-decorative-signs-2.ttf");
 }
 @font-face {
   font-family: vintage-decorative-signs-3;
-  src: url("fonts/vintage-decorative-signs-3.woff");
+  src: url("../fonts/vintage-decorative-signs-3.woff");
 }
 
 
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: nymphette;
-  src: url("fonts/nymphette.ttf");
+  src: url("../fonts/nymphette.ttf");
 }
 .nymph {
   font-family: nymphette;
@@ -58,7 +58,7 @@ html, body {
   color: #644;
   font-family: Forum, serif;
   background-color: #f7e7d0;
-  background-image: url("images/almond-papyrus-2.jpg");
+  background-image: url("../images/almond-papyrus-2.jpg");
   background-repeat: repeat;
 }
 
@@ -195,36 +195,11 @@ ul.no-bullets li {
   margin-left: -1em;
 }
 
-/* Layering */
-.z1 {
-  z-index: 1;
-  box-shadow: 0 1px 3px #321;
-  box-shadow: 0 1px 3px rgba(15,10,5,0.4);
-}
-.z2 {
-  z-index: 2;
-  box-shadow: 0 2px 6px #321;
-  box-shadow: 0 2px 6px rgba(15,10,5,0.4);
-}
-.z3 {
-  z-index: 3;
-  box-shadow: 0 5px 15px #321;
-  box-shadow: 0 5px 15px rgba(15,10,5,0.4);
-}
-.z4 {
-  z-index: 4;
-  box-shadow: 0 10px 30px #321;
-  box-shadow: 0 10px 30px rgba(15,10,5,0.4);
-}
-.z5 {
-  z-index: 5;
-  box-shadow: 0 10px 30px #321;
-  box-shadow: 0 10px 30px rgba(15,10,5,0.4);
-}
-
 /* Card */
 .card {
-  background: #f7f7f7 url("images/paper.jpg") repeat;
+  background-color: #f7f7f7;
+  background-image: url("../images/paper.jpg");
+  background-repeat: repeat;
   border-radius: 0;
 }
 .card .card-title {
@@ -239,7 +214,7 @@ ul.no-bullets li {
 
 /* Card Matte */
 .card-matte {
-  background: #622 center top url("images/leather-tile.jpg") repeat;
+  background: #622 center top url("../images/leather-tile.jpg") repeat;
   border: 3px ridge #ba0;
   padding: 20px;
 }
@@ -382,7 +357,7 @@ ul.no-bullets li {
 
 /* Etched Brass Plate */
 .bg-brass {
-  background: #db0 url("images/brass-plate.jpg") repeat;
+  background: #db0 url("../images/brass-plate.jpg") repeat;
   color: #db0;
   color: rgba(150,100,0,0.4);
   text-shadow: 0px 1px 0px rgba(255,255,255,0.25), 0px -1px 0px rgba(0,0,0,0.5);
@@ -392,7 +367,7 @@ ul.no-bullets li {
   padding: 0.5rem;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #db0 url("images/brass-plate.jpg") repeat;
+  background: #db0 url("../images/brass-plate.jpg") repeat;
   font-family: gothic-light, arial, sans-serif;
   color: #db0;
   color: rgba(150,100,0,0.4);
@@ -403,7 +378,7 @@ ul.no-bullets li {
 .brass-plate .corner.br,
 .brass-plate .corner.bl {
   width: 20px; height: 20px;
-  background: url('images/screw-20.png') no-repeat;
+  background: url('../images/screw-20.png') no-repeat;
   position: absolute;
 }
 .brass-plate .corner.tr { top: 4px; right: 4px; }
@@ -417,7 +392,7 @@ ul.no-bullets li {
 .brass-plate-footer::before,
 .brass-plate-footer::after {
   width: 20px; height: 20px;
-  background: url('images/screw-20.png') no-repeat;
+  background: url('../images/screw-20.png') no-repeat;
   position: absolute;
 }
 .brass-plate-header::before {
@@ -462,7 +437,7 @@ textarea.form-control
   font-size: 1rem;
   color: #644;
   background-color: #f7f7e7;
-  /*background: rgba(255,255,255,0.9) url("images/worn-graphpaper.jpg") repeat; */
+  /*background: rgba(255,255,255,0.9) url("../images/worn-graphpaper.jpg") repeat; */
   box-shadow: 0 3px 8px #321 inset;
   -webkit-transition: background 0.5s;
           transition: background 0.5s;
@@ -527,7 +502,8 @@ button.large {
 .c-input {
   color: inherit;
 }
-.c-indicator {
+.c-indicator,
+.custom-control-indicator {
   width: 1.2rem; height: 1.2rem;
   border: 4px ridge #db0;
   background-color: #333;
@@ -536,10 +512,16 @@ button.large {
   background: -moz-linear-gradient(#555, black);
   background: linear-gradient(#555, black);
 }
-.c-input>input:focus~.c-indicator {
+.c-input>input:focus~.c-indicator,
+.custom-control-input:focus~.custom-control-indicator {
   border-color: #ddd;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-.c-input>input:checked~.c-indicator {
+.c-input>input:checked~.c-indicator,
+.custom-radio .custom-control-input:checked~.custom-control-indicator,
+.custom-checkbox .custom-control-input:checked~.custom-control-indicator {
   background-image: none;
   background-color: #0f0;
   background: -webkit-linear-gradient(#0c0, #0f0, #0c0);
